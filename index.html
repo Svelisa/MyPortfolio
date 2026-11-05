@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>סבטלנה לבדב | מפתחת למידה ומנהלת ידע - Portfolio</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="תיק עבודות של סבטלנה לבדב - מפתחת למידה, מנהלת ידע ותפעול בעלת ניסיון בפיתוח לומדות, ניהול Moodle LMS, כלי AI וניהול גלובלי.">
+
+  <!-- Modern Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Playpen+Sans+Hebrew:wght@100..800&family=Poppins:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Font Awesome 6 (for animated wave footer) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="sidebar-expanded">
+
+  <!-- 🗼 Dynamic Lighthouse Beam Projection Overlay (Connects Lighthouse Beacon to Active Headings) -->
+  <div class="lighthouse-global-beam" id="lighthouseGlobalBeam" aria-hidden="true">
+    <svg class="lighthouse-global-beam-svg" id="lighthouseBeamSvg" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <!-- Beam linear gradient: rich coastal light beam clearly visible across the entire span, feathered at edge -->
+        <linearGradient id="globalBeamGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95" />
+          <stop offset="15%" stop-color="#eaf7fd" stop-opacity="0.8" />
+          <stop offset="45%" stop-color="#bce7f7" stop-opacity="0.6" />
+          <stop offset="75%" stop-color="#8cd5ef" stop-opacity="0.35" />
+          <stop offset="92%" stop-color="#8cd5ef" stop-opacity="0.12" />
+          <stop offset="100%" stop-color="#8cd5ef" stop-opacity="0" />
+        </linearGradient>
+
+        <!-- Ambient wide scatter gradient -->
+        <linearGradient id="globalBeamScatter" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#ffffff" stop-opacity="0.65" />
+          <stop offset="25%" stop-color="#cdecf7" stop-opacity="0.4" />
+          <stop offset="65%" stop-color="#a4def4" stop-opacity="0.2" />
+          <stop offset="90%" stop-color="#a4def4" stop-opacity="0.08" />
+          <stop offset="100%" stop-color="#a4def4" stop-opacity="0" />
+        </linearGradient>
+
+        <!-- Beacon Light Source Flare -->
+        <radialGradient id="beaconSourceFlare" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="#ffffff" stop-opacity="1" />
+          <stop offset="35%" stop-color="#cdecf7" stop-opacity="0.9" />
+          <stop offset="70%" stop-color="#5597b0" stop-opacity="0.4" />
+          <stop offset="100%" stop-color="#5597b0" stop-opacity="0" />
+        </radialGradient>
+
+        <filter id="beamGlowFilter" x="-30%" y="-30%" width="160%" height="160%">
+          <feGaussianBlur stdDeviation="3.5" result="blur" />
+          <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+          </feMerge>
+        </filter>
+      </defs>
+
+      <!-- Soft ambient wider haze cone -->
+      <polygon id="beamAmbientCone" points="0,0 0,0 0,0" fill="url(#globalBeamScatter)" opacity="0.6"
+        filter="url(#beamGlowFilter)" />
+
+      <!-- Primary focused light cone -->
+      <polygon id="beamPrimaryCone" points="0,0 0,0 0,0" fill="url(#globalBeamGrad)" filter="url(#beamGlowFilter)" />
+
+      <!-- Beacon emission flare point -->
+      <circle id="beamSourceFlare" cx="0" cy="0" r="14" fill="url(#beaconSourceFlare)" />
+    </svg>
+  </div>
+
+  <!-- Mobile Top Navigation Header -->
+  <header class="mobile-header">
+    <div class="mobile-brand">
+      <div class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></div>
+      <strong>SVETLANA<span>.LEBEDEV</span></strong>
+    </div>
+    <button id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Open Navigation Menu">
+      <svg viewBox="0 0 24 24">
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </button>
+  </header>
+
+  <!-- Mobile Backdrop Overlay -->
+  <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+
+  <!-- STEA Signature Sidebar Component -->
+  <aside id="sidebar" class="sidebar expanded" aria-label="Workspace navigation">
+    <!-- Collapse / Expand Toggle Button -->
+    <button id="toggle" class="toggle" aria-label="Collapse sidebar" aria-expanded="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path d="M15 18l-6-6 6-6" />
+      </svg>
+    </button>
+
+    <!-- 🗼 Lighthouse Building Menu Tower -->
+    <div class="lighthouse-building" id="lighthouseBuilding">
+
+      <!-- Language Switcher Button (Compact beacon badge aligned with lighthouse finial) -->
+      <button id="lang-switch-btn" class="sidebar-lang-btn" aria-label="Switch Language" title="English / עברית">
+        <span class="lang-code" data-i18n="lang-code">EN</span>
+        <span class="tooltip" data-i18n="lang-switch">English</span>
+      </button>
+
+      <!-- Top Lantern & Beacon Room -->
+      <div class="tower-lantern" id="towerLantern" aria-hidden="true">
+        <div class="tower-vane">
+          <div class="tower-spire"></div>
+        </div>
+        <div class="tower-dome"></div>
+        <div class="tower-glass-cage">
+          <div class="tower-beacon-lamp"></div>
+          <div class="tower-glass-panes">
+            <span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+        <div class="tower-balcony">
+          <div class="tower-railing"></div>
+        </div>
+        <div class="tower-corbel"></div>
+      </div>
+
+      <!-- Tapered Lighthouse Levels (Navigation Chapters) -->
+      <nav class="nav lighthouse-levels" id="lighthouseNav" aria-label="Lighthouse levels navigation">
+        <a href="#hero" class="nav-btn lighthouse-stripe stripe-red active" data-nav="hero" aria-label="Home">
+          <i class="bi bi-house-door-fill" aria-hidden="true"></i>
+          <span class="label" data-i18n="nav-home">ראשי</span>
+          <span class="tooltip" data-i18n="nav-home">ראשי</span>
+        </a>
+
+        <a href="#about" class="nav-btn lighthouse-stripe stripe-white" data-nav="about" aria-label="About">
+          <i class="bi bi-person-badge-fill" aria-hidden="true"></i>
+          <span class="label" data-i18n="nav-about">קצת עליי</span>
+          <span class="tooltip" data-i18n="nav-about">קצת עליי</span>
+        </a>
+
+        <a href="#projects" class="nav-btn lighthouse-stripe stripe-red" data-nav="projects" aria-label="Projects">
+          <i class="bi bi-grid-fill" aria-hidden="true"></i>
+          <span class="label" data-i18n="nav-projects">פרויקטים</span>
+          <span class="tooltip" data-i18n="nav-projects">פרויקטים</span>
+        </a>
+
+        <a href="#career" class="nav-btn lighthouse-stripe stripe-white" data-nav="career" aria-label="Career">
+          <i class="bi bi-briefcase-fill" aria-hidden="true"></i>
+          <span class="label" data-i18n="nav-career">ניסיון תעסוקתי</span>
+          <span class="tooltip" data-i18n="nav-career">ניסיון תעסוקתי</span>
+        </a>
+
+        <a href="#education" class="nav-btn lighthouse-stripe stripe-red" data-nav="education" aria-label="Education">
+          <i class="bi bi-mortarboard-fill" aria-hidden="true"></i>
+          <span class="label" data-i18n="nav-education">השכלה והסמכות</span>
+          <span class="tooltip" data-i18n="nav-education">השכלה והסמכות</span>
+        </a>
+
+        <a href="#skills" class="nav-btn lighthouse-stripe stripe-white" data-nav="skills" aria-label="Skills">
+          <i class="bi bi-stars" aria-hidden="true"></i>
+          <span class="label" data-i18n="nav-skills">מיומנויות וכלים</span>
+          <span class="tooltip" data-i18n="nav-skills">מיומנויות וכלים</span>
+        </a>
+
+        <a href="#testimonials" class="nav-btn lighthouse-stripe stripe-red" data-nav="testimonials"
+          aria-label="Testimonials">
+          <i class="bi bi-chat-quote-fill" aria-hidden="true"></i>
+          <span class="label" data-i18n="nav-testimonials">המלצות ומשובים</span>
+          <span class="tooltip" data-i18n="nav-testimonials">המלצות ומשובים</span>
+        </a>
+
+        <a href="#contact" class="nav-btn lighthouse-stripe stripe-white" data-nav="contact" aria-label="Contact">
+          <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+          <span class="label" data-i18n="nav-contact">יצירת קשר</span>
+          <span class="tooltip" data-i18n="nav-contact">יצירת קשר</span>
+        </a>
+      </nav>
+
+      <!-- Solid Coastal Stone Plinth Base -->
+      <div class="tower-stone-base" aria-hidden="true">
+        <div class="tower-stone-blocks">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+
+      <!-- Tower Crashing Waves Base -->
+      <div class="tower-waves-base" aria-hidden="true">
+        <div class="sea-wave wave-back"></div>
+        <div class="sea-wave wave-front"></div>
+        <div class="sea-foam"></div>
+      </div>
+
+    </div>
+
+  </aside>
+
+  <!-- Main Content Layout -->
+  <div class="main-layout">
+    <main>
+
+      <!-- 1. Hero Section with 3D Interactive Lanyard ID Badge -->
+      <section id="hero" class="hero">
+        <div class="container">
+          <div class="hero-grid">
+
+            <!-- Left Hero Content -->
+            <div class="hero-content">
+              <div class="hero-greeting" data-i18n="hero-greeting">שלום, אני</div>
+              <h1 class="hero-title" data-i18n="hero-name">סבטלנה לבדב</h1>
+              <div class="hero-role-badge" data-i18n="hero-role-title">מפתחת למידה, מנהלת ידע ותפעול</div>
+              <p class="hero-subtitle" data-i18n="hero-desc">
+                אשת למידה, ניהול ידע ותפעול בעלת ניסיון מצטבר של למעלה מ-4 שנים בעולמות ההדרכה, הכולל אפיון, פיתוח
+                והטמעת פתרונות למידה דיגיטליים. בעלת רקע מוכח בתחקור מומחי תוכן, כתיבה הדרכתית וטכנית, ניהול LMS ושימוש
+                בכלי AI לייעול תהליכי עבודה.
+              </p>
+
+              <div class="hero-actions">
+                <a href="#projects" class="cta-btn primary" data-i18n="hero-btn-work">
+                  <span>צפייה בתוצרים</span>
+                  <i class="bi bi-arrow-left" aria-hidden="true"></i>
+                </a>
+                <a href="#contact" class="cta-btn secondary" data-i18n="hero-btn-contact">בואו נדבר</a>
+              </div>
+
+              <!-- Social Links & Contact Quick Access -->
+              <div class="hero-socials">
+                <a href="https://linkedin.com" target="_blank" class="social-link" title="LinkedIn"
+                  aria-label="LinkedIn">
+                  <i class="bi bi-linkedin" aria-hidden="true"></i>
+                </a>
+                <a href="mailto:Svetlana.Lebedev.Work@gmail.com" class="social-link"
+                  title="Svetlana.Lebedev.Work@gmail.com" aria-label="Email">
+                  <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+                </a>
+                <a href="tel:0528196358" class="social-link" title="052-8196358" aria-label="Phone">
+                  <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. Infinite Tech Stack Marquee Ticker -->
+      <section class="tech-marquee-section">
+        <div class="marquee-track">
+          <div class="tech-badge"><span class="tech-badge-dot"></span> Articulate Storyline 360</div>
+          <div class="tech-badge"><span class="tech-badge-dot"></span> Moodle LMS Management</div>
+          <div class="tech-badge"><span class="tech-badge-dot"></span> ServiceNow Knowledge Base</div>
+          <div class="tech-badge"><span class="tech-badge-dot"></span> SharePoint Knowledge Portals</div>
+          <div class="tech-badge"><span class="tech-badge-dot"></span> AI Tools (ChatGPT, Gemini, NotebookLM)</div>
+          <div class="tech-badge"><span class="tech-badge-dot"></span> Camtasia & Snagit</div>
+          <div class="tech-badge"><span class="tech-badge-dot"></span> Figma & UI/UX Design</div>
+          <div class="tech-badge"><span class="tech-badge-dot"></span> Adobe Illustrator & Canva</div>
+          <div class="tech-badge"><span class="tech-badge-dot"></span> Coding (C#, HTML5, JS)</div>
+          <div class="tech-badge"><span class="tech-badge-dot"></span> Adobe Captivate</div>
+          <div class="tech-badge"><span class="tech-badge-dot"></span> SAP SuccessFactors</div>
+          <div class="tech-badge"><span class="tech-badge-dot"></span> Onboarding & QA Workflows</div>
+          <!-- Duplicate for seamless infinite loop -->
+          <div class="tech-badge"><span class="tech-badge-dot"></span> Articulate Storyline 360</div>
+          <div class="tech-badge"><span class="tech-badge-dot"></span> Moodle LMS Management</div>
+          <div class="tech-badge"><span class="tech-badge-dot"></span> ServiceNow Knowledge Base</div>
+          <div class="tech-badge"><span class="tech-badge-dot"></span> SharePoint Knowledge Portals</div>
+          <div class="tech-badge"><span class="tech-badge-dot"></span> AI Tools (ChatGPT, Gemini, NotebookLM)</div>
+          <div class="tech-badge"><span class="tech-badge-dot"></span> Camtasia & Snagit</div>
+          <div class="tech-badge"><span class="tech-badge-dot"></span> Figma & UI/UX Design</div>
+          <div class="tech-badge"><span class="tech-badge-dot"></span> Coding (C#, HTML5, JS)</div>
+        </div>
+      </section>
+
+      <!-- 3. About Section with Metrics Counter Grid & Core Pillars -->
+      <section id="about" class="about section-padding">
+        <div class="container">
+          <div class="section-header text-center">
+            <h2 class="section-title" data-i18n="about-title">תמצית מקצועית ועמודי התווך</h2>
+            <p class="section-subtitle" data-i18n="about-subtitle">
+              שילוב של ניהול ידע ארגוני, פיתוח פתרונות למידה דיגיטליים מתקדמים וניהול מערכי תמיכה גלובליים.
+            </p>
+          </div>
+
+          <!-- Metrics Counter Grid -->
+          <div class="metrics-grid">
+            <div class="metric-card">
+              <div class="metric-number">4+</div>
+              <div class="metric-label" data-i18n="metric-exp">שנות ניסיון בעולמות ההדרכה</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-number">Global</div>
+              <div class="metric-label" data-i18n="metric-projects">ניהול מוקדים גלובליים (ארה"ב, אירופה, ישראל)</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-number">100%</div>
+              <div class="metric-label" data-i18n="metric-satisfaction">מחויבות לבקרת איכות ושיפור ביצועים</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-number">B.A</div>
+              <div class="metric-label" data-i18n="metric-learners">תואר ראשון בטכנולוגיות למידה (HIT 2026)</div>
+            </div>
+          </div>
+
+          <!-- What I Do / 3 Pillars -->
+          <div class="pillars-grid">
+            <div class="pillar-card">
+              <div class="pillar-icon-box">
+                <i class="bi bi-mortarboard-fill" aria-hidden="true"></i>
+              </div>
+              <h3 data-i18n="pillar1-title">פיתוח לומדות ותוצרי הדרכה</h3>
+              <p data-i18n="pillar1-desc">אפיון ופיתוח תוצרי למידה עצמית מבוססי נתונים, לומדות אינטראקטיביות (Storyline
+                360, Captivate), מצגות וסרטוני הדרכה מקצועיים (Camtasia, Snagit).</p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon-box">
+                <i class="bi bi-journal-bookmark-fill" aria-hidden="true"></i>
+              </div>
+              <h3 data-i18n="pillar2-title">ניהול ידע, תיעוד ובקרת איכות</h3>
+              <p data-i18n="pillar2-desc">הקמה ותפעול מאגרי ידע ב-ServiceNow וב-SharePoint, כתיבת מדריכים טכניים ונהלים
+                לשימוש גלובלי, תחקור מומחי תוכן (SMEs) וניטור איכות שירות.</p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon-box">
+                <i class="bi bi-laptop-fill" aria-hidden="true"></i>
+              </div>
+              <h3 data-i18n="pillar3-title">ניהול LMS וטכנולוגיות חדשניות</h3>
+              <p data-i18n="pillar3-desc">ניהול שוטף של Moodle ו-SuccessFactors (הרשאות, ניטור ודוחות ביצועים), פיתוח
+                ממשקים בקוד (HTML/JS/C#) ושילוב כלי AI לייעול תהליכי עבודה.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 4. Featured Projects Section with Interactive 3D Perspective Card Carousel -->
+      <section id="projects" class="projects section-padding">
+        <div class="container">
+          <div class="section-header text-center">
+            <h2 class="section-title" data-i18n="projects-title">פרויקטים ו</h2>
+            <p class="section-subtitle" data-i18n="projects-subtitle">מבחר פתרונות למידה, לומדות אינטראקטיביות ומערכי
+              ניהול ידע.</p>
+          </div>
+
+          <!-- Project Filter Tabs -->
+          <div class="project-filters">
+            <button class="filter-btn active" data-filter="all" data-i18n="filter-all">הכל (All)</button>
+            <button class="filter-btn" data-filter="elearning" data-i18n="filter-elearning">לומדות והדרכה
+              דיגיטלית</button>
+            <button class="filter-btn" data-filter="knowledge" data-i18n="filter-knowledge">ניהול ידע ומערכות</button>
+            <button class="filter-btn" data-filter="lms" data-i18n="filter-lms">ניהול LMS (Moodle)</button>
+            <button class="filter-btn" data-filter="code-ai" data-i18n="filter-code-ai">פיתוח קוד ו-AI</button>
+          </div>
+
+          <!-- Position Indicator Bars & Counter (Directly below Filter Tabs) -->
+          <div class="carousel-indicators-header">
+            <div class="carousel-dots-container" id="carouselDots">
+              <button class="carousel-dot active" data-dot="0" aria-label="Slide 1"></button>
+              <button class="carousel-dot" data-dot="1" aria-label="Slide 2"></button>
+              <button class="carousel-dot" data-dot="2" aria-label="Slide 3"></button>
+              <button class="carousel-dot" data-dot="3" aria-label="Slide 4"></button>
+              <button class="carousel-dot" data-dot="4" aria-label="Slide 5"></button>
+            </div>
+          </div>
+
+          <!-- 3D Card Carousel Stage with Side Arrow Buttons -->
+          <div class="carousel-3d-wrapper">
+
+            <!-- Side Navigation Arrow: Previous (Left on LTR / Right on RTL) -->
+            <button id="carouselPrevBtn" class="carousel-side-arrow prev-arrow" aria-label="Previous Project">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+
+            <!-- 3D Stage -->
+            <div class="carousel-3d-stage" id="carouselStage">
+              <div class="carousel-3d-track" id="carouselTrack">
+
+                <!-- Card 1: Onboarding Storyline Teva -->
+                <div class="carousel-card active" data-index="0" data-category="elearning knowledge"
+                  data-title-key="proj1-title" data-desc-key="proj1-desc">
+                  <div class="card-visual">
+                    <div class="card-visual-gradient grad-1"></div>
+                    <span class="card-category-badge">Storyline 360 & Onboarding</span>
+                    <div class="card-icon-center">
+                      <svg viewBox="0 0 24 24">
+                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <div class="card-meta-top">
+                      <span class="card-tag-pill">Teva Global</span>
+                      <span class="card-tag-pill">Self-Paced</span>
+                    </div>
+                    <h4 class="card-title" data-i18n="proj1-title">סטנדרט Onboarding: סדרת לומדות לקליטת עובדים</h4>
+                    <p class="card-snippet" data-i18n="proj1-desc">פיתוח סדרת לומדות ללמידה עצמית שהוטמעה כסטנדרט לקליטת
+                      עובדים חדשים בטבע, כולל תרגול מעשי, מבחני הסמכה ומעקב אחר שיפור ביצועים.</p>
+                    <div class="card-footer-action">
+                      <span class="card-tools">Storyline 360 • Canva</span>
+                      <a href="#contact" class="card-arrow-btn" aria-label="Project Details">
+                        <svg viewBox="0 0 24 24">
+                          <line x1="7" y1="17" x2="17" y2="7"></line>
+                          <polyline points="7 7 17 7 17 17"></polyline>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 2: Fire & Rescue College Moodle -->
+                <div class="carousel-card" data-index="1" data-category="lms elearning" data-title-key="proj2-title"
+                  data-desc-key="proj2-desc">
+                  <div class="card-visual">
+                    <div class="card-visual-gradient grad-2"></div>
+                    <span class="card-category-badge">Moodle LMS & Media</span>
+                    <div class="card-icon-center">
+                      <svg viewBox="0 0 24 24">
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                        <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <div class="card-meta-top">
+                      <span class="card-tag-pill">כבאות והצלה</span>
+                      <span class="card-tag-pill">Moodle Admin</span>
+                    </div>
+                    <h4 class="card-title" data-i18n="proj2-title">מערך למידה דיגיטלי ומערכת Moodle (המכללה לכבאות
+                      והצלה)</h4>
+                    <p class="card-snippet" data-i18n="proj2-desc">אפיון ופיתוח לומדות, מצגות וסרטוני הדרכה, לצד ניהול
+                      הרשאות, ניטור נתוני למידה והעברת הדרכות פרונטליות למדריכי הארגון על כלי הדרכה מתקדמים.</p>
+                    <div class="card-footer-action">
+                      <span class="card-tools">Moodle • Camtasia</span>
+                      <a href="#contact" class="card-arrow-btn" aria-label="Project Details">
+                        <svg viewBox="0 0 24 24">
+                          <line x1="7" y1="17" x2="17" y2="7"></line>
+                          <polyline points="7 7 17 7 17 17"></polyline>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 3: ServiceNow & SharePoint KB -->
+                <div class="carousel-card" data-index="2" data-category="knowledge" data-title-key="proj3-title"
+                  data-desc-key="proj3-desc">
+                  <div class="card-visual">
+                    <div class="card-visual-gradient grad-3"></div>
+                    <span class="card-category-badge">Knowledge Base & QA</span>
+                    <div class="card-icon-center">
+                      <svg viewBox="0 0 24 24">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <div class="card-meta-top">
+                      <span class="card-tag-pill">ServiceNow KB</span>
+                      <span class="card-tag-pill">SharePoint</span>
+                    </div>
+                    <h4 class="card-title" data-i18n="proj3-title">פורטל ניהול ידע ומדריכים טכניים (ServiceNow &
+                      SharePoint)</h4>
+                    <p class="card-snippet" data-i18n="proj3-desc">תפעול והקמת מאגרי ידע ב-ServiceNow וב-SharePoint,
+                      כתיבת נהלים ומדריכים טכניים למוקדים גלובליים, וניטור בקרת איכות לסגירת פערי ידע.</p>
+                    <div class="card-footer-action">
+                      <span class="card-tools">Global SOPs • QA</span>
+                      <a href="#contact" class="card-arrow-btn" aria-label="Project Details">
+                        <svg viewBox="0 0 24 24">
+                          <line x1="7" y1="17" x2="17" y2="7"></line>
+                          <polyline points="7 7 17 7 17 17"></polyline>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 4: Code & AI Tools -->
+                <div class="carousel-card" data-index="3" data-category="code-ai elearning" data-title-key="proj4-title"
+                  data-desc-key="proj4-desc">
+                  <div class="card-visual">
+                    <div class="card-visual-gradient grad-4"></div>
+                    <span class="card-category-badge">Code & AI Engineering</span>
+                    <div class="card-icon-center">
+                      <svg viewBox="0 0 24 24">
+                        <polyline points="16 18 22 12 16 6"></polyline>
+                        <polyline points="8 6 2 12 8 18"></polyline>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <div class="card-meta-top">
+                      <span class="card-tag-pill">C# / HTML / JS</span>
+                      <span class="card-tag-pill">Figma UI/UX</span>
+                    </div>
+                    <h4 class="card-title" data-i18n="proj4-title">פיתוח ממשקי למידה מותאמים אישית בקוד ו-AI</h4>
+                    <p class="card-snippet" data-i18n="proj4-desc">בניית ממשקי למידה ורכיבים אינטראקטיביים באמצעות C#,
+                      HTML, JS ועיצוב ב-Figma, לצד רתימת כלי AI (ChatGPT, Gemini, NotebookLM) לאפיון ופיתוח מהיר.</p>
+                    <div class="card-footer-action">
+                      <span class="card-tools">Rider • AI Stack</span>
+                      <a href="#contact" class="card-arrow-btn" aria-label="Project Details">
+                        <svg viewBox="0 0 24 24">
+                          <line x1="7" y1="17" x2="17" y2="7"></line>
+                          <polyline points="7 7 17 7 17 17"></polyline>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 5: Quality Assurance & Service Excellence -->
+                <div class="carousel-card" data-index="4" data-category="knowledge" data-title-key="proj5-title"
+                  data-desc-key="proj5-desc">
+                  <div class="card-visual">
+                    <div class="card-visual-gradient grad-5"></div>
+                    <span class="card-category-badge">Quality & Service Excellence</span>
+                    <div class="card-icon-center">
+                      <svg viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M12 8v4l3 3"></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <div class="card-meta-top">
+                      <span class="card-tag-pill">בקרת איכות</span>
+                      <span class="card-tag-pill">הדרכות פרטניות</span>
+                    </div>
+                    <h4 class="card-title" data-i18n="proj5-title">מערך בקרת איכות והדרכות פרטניות לשיפור שירות</h4>
+                    <p class="card-snippet" data-i18n="proj5-desc">ניטור רמת המקצועיות של נציגי תמיכה במוקדים גלובליים,
+                      זיהוי פערי ידע וביצוע הדרכות ממוקדות שהביאו לעמידה עקבית ביעדי איכות ושירות גבוהים.</p>
+                    <div class="card-footer-action">
+                      <span class="card-tools">CRM Analysis • Coaching</span>
+                      <a href="#contact" class="card-arrow-btn" aria-label="Project Details">
+                        <svg viewBox="0 0 24 24">
+                          <line x1="7" y1="17" x2="17" y2="7"></line>
+                          <polyline points="7 7 17 7 17 17"></polyline>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Side Navigation Arrow: Next (Right on LTR / Left on RTL) -->
+            <button id="carouselNextBtn" class="carousel-side-arrow next-arrow" aria-label="Next Project">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+
+          </div>
+
+          <!-- Active Project Showcase Info below -->
+          <div class="carousel-bottom-panel">
+            <div class="carousel-active-info">
+              <h3 class="carousel-active-headline" id="carouselActiveTitle" data-i18n="proj1-title">סטנדרט Onboarding:
+                סדרת לומדות לקליטת עובדים</h3>
+              <p class="carousel-active-desc" id="carouselActiveDesc" data-i18n="proj1-desc">פיתוח סדרת לומדות ללמידה
+                עצמית שהוטמעה כסטנדרט לקליטת עובדים חדשים בטבע, כולל תרגול מעשי, מבחני הסמכה ומעקב אחר שיפור ביצועים.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 5. Career Journey (Vertical Timeline) -->
+      <section id="career" class="career section-padding">
+        <div class="container">
+          <div class="section-header text-center">
+            <h2 class="section-title" data-i18n="career-title">ניסיון תעסוקתי</h2>
+            <p class="section-subtitle" data-i18n="career-subtitle">רקע עשיר בפיתוח הדרכה, ניהול מערכי תמיכה גלובליים
+              וניהול ידע ארגוני.</p>
+          </div>
+
+          <div class="timeline">
+
+            <!-- Timeline Item 1: Fire & Rescue College -->
+            <div class="timeline-item">
+              <div class="timeline-node"></div>
+              <div class="timeline-card">
+                <div class="timeline-header">
+                  <div class="timeline-role" data-i18n="exp1-role">מפתחת למידה ומנהלת LMS</div>
+                  <span class="timeline-date">2024 – כעת</span>
+                </div>
+                <div class="timeline-company" data-i18n="exp1-company">המכללה לכבאות והצלה לישראל</div>
+                <p class="timeline-desc" data-i18n="exp1-desc">
+                  • <strong>פיתוח תוצרים:</strong> אפיון וביצוע פיתוח של לומדות, מצגות וסרטוני הדרכה לקהלי יעד
+                  מגוונים.<br>
+                  • <strong>ניהול LMS:</strong> ניהול שוטף של מערכת Moodle: ניהול הרשאות, ניטור למידה והפקת דוחות
+                  ביצועים.<br>
+                  • <strong>הדרכת מדריכים:</strong> העברת הדרכות פרונטליות למדריכי הארגון על שימוש יעיל בכלי עבודה
+                  והדרכה.
+                </p>
+                <div class="tags">
+                  <span class="tag">Moodle</span>
+                  <span class="tag">Storyline 360</span>
+                  <span class="tag">Camtasia</span>
+                  <span class="tag">הדרכת מדריכים</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Timeline Item 2: Teva - Global Support Manager -->
+            <div class="timeline-item">
+              <div class="timeline-node"></div>
+              <div class="timeline-card">
+                <div class="timeline-header">
+                  <div class="timeline-role" data-i18n="exp2-role">מנהלת מרכז תמיכה גלובלי</div>
+                  <span class="timeline-date">2021 – 2024</span>
+                </div>
+                <div class="timeline-company" data-i18n="exp2-company">טבע תעשיות פרמצבטיות (Teva Pharmaceuticals)</div>
+                <p class="timeline-desc" data-i18n="exp2-desc">
+                  • ניהול כולל של מערך התמיכה הגלובלי: מוקדי תמיכה גלובליים (ישראל, ארה"ב, אירופה ומדינות דוברות
+                  רוסית).<br>
+                  • אחריות על מתן שירות ותמיכה ברמה גבוהה באנגלית ובעברית, תוך עמידה מדויקת ביעדי שירות.
+                </p>
+                <div class="tags">
+                  <span class="tag">Global Operations</span>
+                  <span class="tag">ServiceNow CRM</span>
+                  <span class="tag">Team Leadership</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Timeline Item 3: Teva - Knowledge & Training Manager -->
+            <div class="timeline-item">
+              <div class="timeline-node"></div>
+              <div class="timeline-card">
+                <div class="timeline-header">
+                  <div class="timeline-role" data-i18n="exp3-role">מנהלת ידע והדרכות במרכז התמיכה</div>
+                  <span class="timeline-date">2018 – 2020</span>
+                </div>
+                <div class="timeline-company" data-i18n="exp3-company">טבע תעשיות פרמצבטיות (Teva Pharmaceuticals)</div>
+                <p class="timeline-desc" data-i18n="exp3-desc">
+                  • <strong>פיתוח סטנדרט Onboarding:</strong> פיתוח סדרת לומדות ללמידה עצמית שהוטמעה כסטנדרט לקליטת
+                  עובדים חדשים.<br>
+                  • <strong>בקרת איכות:</strong> ניטור רמת המקצועיות של נציגי תמיכה וביצוע הדרכות פרטניות לתיקון פערי
+                  ידע ושיפור איכות השירות.<br>
+                  • <strong>ניהול ידע גלובלי:</strong> תפעול מאגרי ידע ב-ServiceNow וב-SharePoint, וכתיבת מדריכים טכניים
+                  לשימוש גלובלי.
+                </p>
+                <div class="tags">
+                  <span class="tag">Onboarding Standard</span>
+                  <span class="tag">SharePoint</span>
+                  <span class="tag">ServiceNow KB</span>
+                  <span class="tag">Quality Assurance</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Timeline Item 4: Teva - Team Lead & Support CIS -->
+            <div class="timeline-item">
+              <div class="timeline-node"></div>
+              <div class="timeline-card">
+                <div class="timeline-header">
+                  <div class="timeline-role" data-i18n="exp4-role">ראש צוות ונציגת תמיכה במדינות דוברות רוסית</div>
+                  <span class="timeline-date">2017 – 2018</span>
+                </div>
+                <div class="timeline-company" data-i18n="exp4-company">טבע תעשיות פרמצבטיות (Teva Pharmaceuticals)</div>
+                <p class="timeline-desc" data-i18n="exp4-desc">
+                  • הובלת צוות נציגים, ניהול משימות שוטפות ומתן שירות ותמיכה טכנית ומקצועית ללקוחות ועובדים במדינות
+                  דוברות רוסית.
+                </p>
+                <div class="tags">
+                  <span class="tag">Team Lead</span>
+                  <span class="tag">Customer Support</span>
+                  <span class="tag">Multilingual</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. Academic Background (Education) & Languages -->
+      <section id="education" class="education section-padding">
+        <div class="container">
+          <div class="section-header text-center">
+            <h2 class="section-title" data-i18n="edu-title">רקע אקדמי, הכשרות ושפות</h2>
+          </div>
+
+          <div class="education-grid">
+
+            <div class="education-card">
+              <span class="edu-badge" data-i18n="edu1-badge">B.A • שנה ג' (2026)</span>
+              <h3 class="edu-degree" data-i18n="edu1-degree">תואר ראשון (.B.A) בטכנולוגיות למידה</h3>
+              <div class="edu-school" data-i18n="edu1-school">HIT המכון הטכנולוגי חולון • 2023 – 2026</div>
+              <div class="edu-period">שנה ג' • מועד סיום צפוי: אוגוסט 2026</div>
+              <p class="edu-desc" data-i18n="edu1-desc">לימודי עומק באפיון ופיתוח לומדות אינטראקטיביות, טכנולוגיות
+                הדרכה, UI/UX לממשקי למידה, ניהול פרויקטי למידה דיגיטליים ותכנות ייעודי.</p>
+            </div>
+
+            <div class="education-card">
+              <span class="edu-badge" data-i18n="edu2-badge">230 שעות לימוד</span>
+              <h3 class="edu-degree" data-i18n="edu2-degree">קורס ניהול ופיתוח הדרכות בארגון</h3>
+              <div class="edu-school" data-i18n="edu2-school">מכללת המי"ל (בשיתוף ג'ון ברייס) • 2023</div>
+              <div class="edu-period">הכשרה מקצועית מקיפה</div>
+              <p class="edu-desc" data-i18n="edu2-desc">אפיון צרכי הדרכה ארגוניים, מתודולוגיות פיתוח הדרכה מתקדמות,
+                ניהול ממשקים והכשרת עובדים.</p>
+            </div>
+
+          </div>
+
+          <!-- Languages Card Grid -->
+          <div class="languages-wrapper">
+            <div class="skills-card">
+              <h3 class="languages-title" data-i18n="lang-section-title">שפות ושליטה</h3>
+              <div class="languages-grid">
+                <div class="language-card">
+                  <strong class="language-name">עברית</strong>
+                  <span class="language-level lang-level-heb" data-i18n="lang-heb-level">רמת שפת אם</span>
+                </div>
+                <div class="language-card">
+                  <strong class="language-name">English (אנגלית)</strong>
+                  <span class="language-level lang-level-eng" data-i18n="lang-eng-level">רמה גבוהה (High Proficiency)</span>
+                </div>
+                <div class="language-card">
+                  <strong class="language-name">Русский (רוסית)</strong>
+                  <span class="language-level lang-level-rus" data-i18n="lang-rus-level">רמת שפת אם</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 7. Technical Arsenal & Skills with Animated Meters -->
+      <section id="skills" class="skills-section section-padding">
+        <div class="container">
+          <div class="section-header text-center">
+            <h2 class="section-title" data-i18n="skills-title">ארגז כלים ומיומנויות</h2>
+            <p class="section-subtitle" data-i18n="skills-subtitle">שליטה בכלים מתקדמים לפיתוח לומדות, ניהול ידע ומערכות
+              LMS.</p>
+          </div>
+
+          <div class="skills-container-grid">
+
+            <!-- Skill Progress Bars -->
+            <div class="skills-card">
+              <h3 class="skills-card-title skills-title-tech" data-i18n="skills-tech-title">רמת שליטה בכלים
+                טכנולוגיים</h3>
+              <div class="skill-bar-group">
+
+                <div class="skill-bar-item">
+                  <div class="skill-bar-header">
+                    <span>Articulate Storyline 360, Adobe Captivate & Canva</span>
+                    <span>96%</span>
+                  </div>
+                  <div class="skill-bar-track">
+                    <div class="skill-bar-fill" data-width="96%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar-item">
+                  <div class="skill-bar-header">
+                    <span>LMS Management (Moodle & SAP SuccessFactors)</span>
+                    <span>94%</span>
+                  </div>
+                  <div class="skill-bar-track">
+                    <div class="skill-bar-fill" data-width="94%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar-item">
+                  <div class="skill-bar-header">
+                    <span>Knowledge Management (ServiceNow KB & SharePoint)</span>
+                    <span>95%</span>
+                  </div>
+                  <div class="skill-bar-track">
+                    <div class="skill-bar-fill" data-width="95%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar-item">
+                  <div class="skill-bar-header">
+                    <span>AI Tools for Learning (ChatGPT, Gemini, NotebookLM)</span>
+                    <span>92%</span>
+                  </div>
+                  <div class="skill-bar-track">
+                    <div class="skill-bar-fill" data-width="92%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar-item">
+                  <div class="skill-bar-header">
+                    <span>Video & Screen Recording (Camtasia, Snagit)</span>
+                    <span>90%</span>
+                  </div>
+                  <div class="skill-bar-track">
+                    <div class="skill-bar-fill" data-width="90%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar-item">
+                  <div class="skill-bar-header">
+                    <span>UI/UX & Graphics (Figma, Adobe Illustrator)</span>
+                    <span>88%</span>
+                  </div>
+                  <div class="skill-bar-track">
+                    <div class="skill-bar-fill" data-width="88%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar-item">
+                  <div class="skill-bar-header">
+                    <span>Custom Code (C#, HTML5, JavaScript)</span>
+                    <span>82%</span>
+                  </div>
+                  <div class="skill-bar-track">
+                    <div class="skill-bar-fill" data-width="82%"></div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Soft Skills & Professional Traits -->
+            <div class="skills-card">
+              <h3 class="skills-card-title" data-i18n="skills-traits-title">חוזקות מקצועיות ואישיות</h3>
+              <p class="skills-traits-desc" data-i18n="skills-traits-desc">
+                יכולת מוכחת בתחקור מומחי תוכן (SMEs), תרגום ידע מורכב לפתרונות למידה דיגיטליים וניהול צוותים גלובליים.
+              </p>
+
+              <div class="traits-grid">
+                <div class="trait-pill" data-i18n="trait-1">🎯 תחקור מומחי תוכן (SMEs)</div>
+                <div class="trait-pill" data-i18n="trait-2">📚 ניהול ידע וכתיבת נהלים</div>
+                <div class="trait-pill" data-i18n="trait-3">🌐 ניהול צוותים גלובליים</div>
+                <div class="trait-pill" data-i18n="trait-4">🔍 בקרת איכות ואיכות שירות</div>
+                <div class="trait-pill" data-i18n="trait-5">⚡ למידה עצמית מבוססת נתונים</div>
+                <div class="trait-pill" data-i18n="trait-6">🤖 שימוש בכלי AI לייעול עבודה</div>
+              </div>
+
+              <!-- Skill Highlights Box -->
+              <div class="skills-highlight-box">
+                <strong class="skills-box-title" data-i18n="skills-box-title">💼 מיומנויות אנליטיות ותקשורת</strong>
+                <p class="skills-box-desc" data-i18n="skills-box-desc">
+                  ניתוח דוחות ונתונים, הפקת לקחים, עבודה עם ServiceNow CRM, שליטה מלאה ביישומי Office, ויחסי אנוש
+                  מעולים.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- 8. Client Testimonials & Endorsements -->
+      <section id="testimonials" class="testimonials section-padding">
+        <div class="container">
+          <div class="section-header text-center">
+            <h2 class="section-title" data-i18n="testimonials-title">המלצות ומשובים</h2>
+          </div>
+
+          <div class="testimonials-grid">
+
+            <div class="testimonial-card">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-quote" data-i18n="test1-quote">
+                "סבטלנה הובילה את פיתוח סטנדרט ה-Onboarding בארגון בצורה יוצאת מן הכלל. הלומדות העצמיות שיצרה שדרגו את
+                איכות הקליטה וקיצרו משמעותית את זמן ההכשרה של עובדים חדשים."
+              </p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">
+                  <img src="assets/avatar.svg" alt="Avatar">
+                </div>
+                <div>
+                  <h4 data-i18n="test1-name">רונית כהן</h4>
+                  <span data-i18n="test1-role">מנהלת הדרכה ופיתוח ארגוני • Teva Pharmaceuticals</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-quote" data-i18n="test2-quote">
+                "ניהול מערכת ה-Moodle והפקת תוצרי ההדרכה עבור המכללה נעשים במקצועיות עליונה, דייקנות וראייה פדגוגית חדה.
+                ההדרכות הפרונטליות למדריכים זכו למשובים מעולים."
+              </p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">
+                  <img src="assets/avatar.svg" alt="Avatar">
+                </div>
+                <div>
+                  <h4 data-i18n="test2-name">אבי לוי</h4>
+                  <span data-i18n="test2-role">מנהל מערך הדרכה • המכללה לכבאות והצלה</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-quote" data-i18n="test3-quote">
+                "ניהול מערך התמיכה הגלובלי ביד רמה, תוך תפעול מדויק של מאגרי ידע ב-ServiceNow ובקרת איכות קפדנית שהביאה
+                לשיפור ישיר בשביעות רצון הלקוחות."
+              </p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">
+                  <img src="assets/avatar.svg" alt="Avatar">
+                </div>
+                <div>
+                  <h4 data-i18n="test3-name">מיכאל שפירא</h4>
+                  <span data-i18n="test3-role">Global Service Director • טבע</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- 9. Contact Section ("Let's Connect") with Interactive Form -->
+      <section id="contact" class="contact section-padding">
+        <div class="container">
+          <div class="section-header text-center">
+            <h2 class="section-title" data-i18n="contact-title">יצירת קשר</h2>
+            <p class="section-subtitle" data-i18n="contact-subtitle">מעוניינים בפיתוח לומדה, ניהול מערכות למידה וידע, או
+              שיתוף פעולה מקצועי? אשמח לעמוד לרשותכם.</p>
+          </div>
+
+          <div class="contact-grid">
+
+            <!-- Contact Info -->
+            <div class="contact-info-card">
+              <h3 data-i18n="contact-info-title">פרטי התקשרות</h3>
+              <p data-i18n="contact-info-desc">מוזמנים ליצור קשר ישיר במייל, בטלפון או להשאיר פנייה בטופס.</p>
+
+              <div class="contact-items">
+                <div class="contact-item">
+                  <div class="contact-icon-box">
+                    <i class="bi bi-envelope-at-fill" aria-hidden="true"></i>
+                  </div>
+                  <div>
+                    <small class="contact-label" data-i18n="contact-email-label">אימייל
+                      ישיר</small>
+                    <a href="mailto:Svetlana.Lebedev.Work@gmail.com"
+                      class="contact-value">Svetlana.Lebedev.Work@gmail.com</a>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-icon-box">
+                    <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+                  </div>
+                  <div>
+                    <small class="contact-label" data-i18n="contact-phone-label">טלפון /
+                      וואטסאפ</small>
+                    <a href="tel:0528196358" class="contact-value">052-8196358</a>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-icon-box">
+                    <i class="bi bi-linkedin" aria-hidden="true"></i>
+                  </div>
+                  <div>
+                    <small class="contact-label"
+                      data-i18n="contact-linkedin-label">לינקדאין</small>
+                    <a href="https://linkedin.com" target="_blank" class="contact-value">LinkedIn Profile</a>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-icon-box">
+                    <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+                  </div>
+                  <div>
+                    <small class="contact-label" data-i18n="contact-loc-label">מיקום</small>
+                    <span class="contact-value" data-i18n="contact-loc-val">ישראל • זמינה גם לעבודה גלובלית
+                      ומרחוק</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Interactive Contact Form -->
+            <div class="contact-form-card">
+              <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                  <label for="name" data-i18n="form-name">שם מלא</label>
+                  <input type="text" id="name" class="form-input" placeholder="ישראל ישראלי" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="email" data-i18n="form-email">כתובת אימייל</label>
+                  <input type="email" id="email" class="form-input" placeholder="name@company.com" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="subject" data-i18n="form-subject">נושא הפנייה</label>
+                  <input type="text" id="subject" class="form-input" placeholder="פיתוח תוצרי למידה / ניהול ידע ו-LMS">
+                </div>
+
+                <div class="form-group">
+                  <label for="message" data-i18n="form-message">הודעה</label>
+                  <textarea id="message" class="form-input" placeholder="ספרו לי קצת על הצורך והיעדים..."
+                    required></textarea>
+                </div>
+
+                <button type="submit" id="submitBtn" class="cta-btn primary contact-submit-btn" data-i18n="form-submit">
+                  <span>שלח הודעה ✈</span>
+                </button>
+                <div id="formFeedback" class="form-feedback"></div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div><!-- .main-layout -->
+
+  <!-- Animated Wave Footer (Integrated from Animation 1) -->
+  <footer>
+    <div class="background">
+      <svg
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 0 1600 900"
+        preserveAspectRatio="none"
+      >
+        <defs>
+          <path
+            id="wave"
+            d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
+    s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z"
+          />
+        </defs>
+        <g>
+          <!-- Layer 1 (Upper Wave): Light cyan wave (#8cd2ec from lighthouse front wave) -->
+          <use xlink:href="#wave" fill="#8cd2ec" opacity="0.85">
+            <animateTransform
+              attributeName="transform"
+              attributeType="XML"
+              type="translate"
+              dur="5s"
+              calcMode="spline"
+              values="270 -160; -334 -190; 270 -160"
+              keyTimes="0; .5; 1"
+              keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+              repeatCount="indefinite"
+            />
+          </use>
+          <!-- Layer 2 (Middle Wave): Medium ocean blue (#5597b0 from lighthouse back wave) -->
+          <use xlink:href="#wave" fill="#5597b0" opacity="0.9">
+            <animateTransform
+              attributeName="transform"
+              attributeType="XML"
+              type="translate"
+              dur="3.5s"
+              calcMode="spline"
+              values="-270 -140; 243 -165; -270 -140"
+              keyTimes="0; .6; 1"
+              keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+              repeatCount="indefinite"
+            />
+          </use>
+          <!-- Layer 3 (Deep Sea Base): Deep navy (#1b2f46 from lighthouse base) -->
+          <use xlink:href="#wave" fill="#1b2f46" opacity="1">
+            <animateTransform
+              attributeName="transform"
+              attributeType="XML"
+              type="translate"
+              dur="2.5s"
+              calcMode="spline"
+              values="0 -110; -140 -130; 0 -110"
+              keyTimes="0; .4; 1"
+              keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+              repeatCount="indefinite"
+            />
+          </use>
+        </g>
+      </svg>
+    </div>
+    <section>
+      <ul class="socials">
+        <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="fa-brands fa-linkedin" data-tooltip="LinkedIn" aria-label="LinkedIn"></a></li>
+        <li><a href="mailto:Svetlana.Lebedev.Work@gmail.com" class="fa-solid fa-envelope" data-tooltip="Email" aria-label="Email"></a></li>
+        <li><a href="tel:0528196358" class="fa-solid fa-phone" data-tooltip="052-8196358" aria-label="Phone"></a></li>
+        <li><a href="https://wa.me/972528196358" target="_blank" rel="noopener noreferrer" class="fa-brands fa-whatsapp" data-tooltip="WhatsApp" aria-label="WhatsApp"></a></li>
+        <li><a href="https://github.com" target="_blank" rel="noopener noreferrer" class="fa-brands fa-github" data-tooltip="GitHub" aria-label="GitHub"></a></li>
+      </ul>
+      <ul class="links">
+        <li><a href="#hero" data-i18n="nav-home">ראשי</a></li>
+        <li><a href="#about" data-i18n="nav-about">קצת עליי</a></li>
+        <li><a href="#projects" data-i18n="nav-projects">פרויקטים</a></li>
+        <li><a href="#career" data-i18n="nav-career">ניסיון תעסוקתי</a></li>
+        <li><a href="#education" data-i18n="nav-education">השכלה והסמכות</a></li>
+        <li><a href="#skills" data-i18n="nav-skills">מיומנויות וכלים</a></li>
+        <li><a href="#testimonials" data-i18n="nav-testimonials">המלצות ומשובים</a></li>
+        <li><a href="#contact" data-i18n="nav-contact">יצירת קשר</a></li>
+      </ul>
+      <p class="legal" data-i18n="footer-legal">© 2026 סבטלנה לבדב • כל הזכויות שמורות</p>
+    </section>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
